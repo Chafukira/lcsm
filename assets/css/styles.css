@@ -1,0 +1,156 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --link-color: #0000ff;
+    --header-bg: #f0f0f0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 16px; /* Adjust as needed */
+    letter-spacing: 0.5px; /* Monospace fonts sometimes benefit from slight letter spacing */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold; /* Consolas might look better with bold headings */
+}
+
+header {
+    background-color: var(--header-bg);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.controls button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+#intro p {
+    text-align: justify;
+}
+
+.youtube-link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.youtube-link svg {
+    width: 20px;
+    margin-right: 5px;
+}
+
+#posts ul, #technologies ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#posts li {
+    margin-bottom: 0.5rem;
+}
+
+.date {
+    color: #666;
+    margin-right: 10px;
+}
+
+footer {
+    background-color: var(--header-bg);
+    padding: 1rem;
+    margin: 2rem auto 0 auto;
+    max-width: 800px;
+    display: flex;
+    justify-content: center; /* Centers the footer content horizontally */
+}
+
+.footer-content {
+    text-align: center; /* Ensures text within the content is centered */
+}
+
+footer p {
+    margin: 0;
+    padding-bottom: 0.5rem; /* Adds some space below the paragraph */
+}
+
+footer nav {
+    margin: 0;
+}
+
+footer nav a {
+    margin: 0 0.5rem; /* Adds space between the links */
+    text-decoration: bold; /* Removes underline from links */
+    color: inherit; /* Inherits color from parent element */
+}
+
+
+/* Dark mode styles */
+body.dark-mode {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --link-color: #bb86fc;
+    --header-bg: #1f1f1f;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#intro h2, #posts h2, #technologies h2 {
+    color: var(--link-color);
+}
+
+.github-link:hover {
+    color: #8a4baf;
+}
+/* Base color for the dark mode icon */
+#darkModeToggle svg {
+    fill: #4C4C4C;
+}
+
+/* When dark mode is active, change the icon color to white */
+body.dark-mode #darkModeToggle svg {
+    fill: #FFFFFF;
+}
+
+/* Rest of your CSS code... */
+
